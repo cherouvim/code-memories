@@ -1,0 +1,40 @@
+SCREEN 13
+RANDOMIZE TIMER
+'
+' MOUNTAINS
+'
+FOR I = 1 TO 50
+X = RND * (200) + 50
+Y = RND * (178)
+FOR P = 1 TO 10
+LINE (X, Y)-(RND * (320), RND * (2) + 178), RND * (16) + 15
+NEXT P
+NEXT I
+LINE (0, 180)-(320, 180), 15
+PAINT (2, 182), 1, 15
+'
+' MOON
+'
+CIRCLE (290, 30), 25, 15
+PAINT (290, 30), "123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+'
+' BUILDINGS
+'
+FOR I = 1 TO 50
+X = RND * (320)
+Y = RND * (100) + 80
+XS = X + RND * (20) + 20
+LINE (X, Y)-(XS, 180), RND * (16) + 15, BF
+LINE (X, Y)-(XS, 180), 196, B
+FOR P = 1 TO Y - 20 STEP 3
+CO = 14
+IF Y + 3 + P > 180 AND Y + 3 + P < 190 THEN CO = 42
+IF Y + 3 + P > 190 THEN CO = 41
+LINE (X + 3, Y + 3 + P)-(XS - 3, Y + 3 + P), CO
+NEXT P
+NEXT I
+DO WHILE INKEY$ = ""
+LOOP
+
+
+
