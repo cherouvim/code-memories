@@ -1,2 +1,10 @@
 # old-shit
-Old programs I wrote around 1990-1993
+Old programs I wrote ages ago.
+
+---
+
+- lang: QBasic
+- name: [CITY.BAS](CITY.BAS)
+- date: 1992-10-07
+
+![city](assets/city.gif)
