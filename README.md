@@ -10,7 +10,17 @@ I screengrabed them using [ScreenToGif](http://www.screentogif.com/) running on 
 - lang: QBasic
 - name: [CITY.BAS](CITY.BAS)
 - date: 1992-10-07
-- mode: 13h
+- mode: 13h (320x200, 256 colors)
 - notes: Layered drawing of a city. Each rendering is different.
 
 ![city](assets/city.gif)
+
+---
+## balls
+- lang: QBasic
+- name: [BALLS.BAS](BALLS.BAS)
+- date: 1997-03-23
+- mode: 12h (640x480, 16 colors)
+- notes: Pretty slow programm. Thought that the problem was with the language, lol.
+
+![balls](assets/balls.gif)
