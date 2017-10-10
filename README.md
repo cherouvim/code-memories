@@ -18,7 +18,7 @@ I screengrabed them using [ScreenToGif](http://www.screentogif.com/) running on 
 ---
 ## 4_4
 - lang: QBasic
-- name: [4_4.BAS](CITY.BAS)
+- name: [4_4.BAS](4_4.BAS)
 - date: 1995-09-06
 - mode: 13h
 - notes: Usage of QBasic subroutines. Ability to redefine game keys. No double buffering so there was a lot of flickering.
