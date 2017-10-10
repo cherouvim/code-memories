@@ -11,5 +11,16 @@ I screengrabed them using [ScreenToGif](http://www.screentogif.com/) running on 
 - name: [CITY.BAS](CITY.BAS)
 - date: 1992-10-07
 - mode: 13h
+- notes: Layered drawing of a city. Each rendering is different.
 
 ![city](assets/city.gif)
+
+---
+## 4_4
+- lang: QBasic
+- name: [4_4.BAS](CITY.BAS)
+- date: 1995-09-06
+- mode: 13h
+- notes: Usage of QBasic subroutines. Ability to redefine game keys. No double buffering so there was a lot of flickering.
+
+![4_4](assets/4_4.gif)
