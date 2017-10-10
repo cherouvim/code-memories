@@ -21,6 +21,6 @@ I screengrabed them using [ScreenToGif](http://www.screentogif.com/) running on 
 - name: [BALLS.BAS](BALLS.BAS)
 - date: 1997-03-23
 - mode: 12h (640x480, 16 colors)
-- notes: Pretty slow programm. Thought that the problem was with the language, lol.
+- notes: Pretty slow program (gif is sped up a bit). Thought that the problem was with the language, lol.
 
 ![balls](assets/balls.gif)
