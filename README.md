@@ -11,7 +11,7 @@ I screengrabed them using [ScreenToGif](http://www.screentogif.com/) running on 
 - name: [CITY.BAS](CITY.BAS)
 - date: 1992-10-07
 - mode: 13h (320x200, 256 colors)
-- notes: Layered drawing of a city. Each rendering is different.
+- notes: Layered drawing of a city. Each program execution produces a slightly different result.
 
 ![city](assets/city.gif)
 
@@ -21,6 +21,16 @@ I screengrabed them using [ScreenToGif](http://www.screentogif.com/) running on 
 - name: [BALLS.BAS](BALLS.BAS)
 - date: 1997-03-23
 - mode: 12h (640x480, 16 colors)
-- notes: Pretty slow program (gif is sped up a bit). Thought that the problem was with the language, lol.
+- notes: Balls bouncing on the boundaries of the screen. Pretty slow program (gif is sped up a bit). Thought that the problem was with the language, lol.
 
 ![balls](assets/balls.gif)
+
+---
+## balls2
+- lang: QBasic
+- name: [BALLS2.BAS](BALLS2.BAS)
+- date: 1997-03-11
+- mode: 12h (640x480, 16 colors)
+- notes: Particles emitted from the center of the screen with basic boundaries collision detection and some semi-random gravitational movement.
+
+![balls2](assets/balls2.gif)
