@@ -1,0 +1,29 @@
+SCREEN 13
+RANDOMIZE TIMER
+PRINT "FROND"
+FOR P = 0 TO 10 STEP 1
+FOR Y = 0 TO 8
+FOR X = 0 TO 8 * 5
+IF POINT(X, Y) <> 0 THEN
+XX = X * 7 + 30 + RND * 3
+YY = Y * 10 + 30 + RND * 3
+ZZ = RND * (RND * 5 + 8 - P) + 2
+CC = P + 20
+CIRCLE (XX, YY), ZZ, CC
+PAINT (XX, YY), CC, CC
+END IF
+NEXT X, Y, P
+DIM A(50, 319)
+FOR I = 1 TO 319
+GET (I, 15)-(I, 110), A(1, I)
+NEXT I
+CLS
+DO WHILE INKEY$ = ""
+FOR I = 1 TO 319
+PUT (I, COS((I + Y) / 30) * 20 + 40), A(1, I), PSET
+NEXT I
+Y = Y + COS(P / 100) + 1.5
+P = P + 1
+
+LOOP
+
