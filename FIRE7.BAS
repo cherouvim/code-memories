@@ -1,0 +1,52 @@
+DECLARE SUB SETPAL (B1!, G1!, R1!, B2!, G2!, R2!, S!, E!)
+SCREEN 13
+CALL SETPAL(0, 0, 0, 30, 0, 63, 1, 63)
+CALL SETPAL(30, 0, 63, 0, 63, 40, 64, 127)
+CALL SETPAL(0, 63, 40, 10, 30, 63, 128, 191)
+CALL SETPAL(10, 30, 63, 0, 0, 0, 192, 255)
+x1 = .2
+y1 = .2
+x2 = 1
+y2 = 1
+DO WHILE INKEY$ = ""
+XX = RND * (10) + x2
+YY = RND * (10) + y2
+IF x2 > 310 OR x2 < 1 THEN x1 = -x1
+IF y2 > 180 OR y2 < 1 THEN y1 = -y1
+x2 = x2 + x1
+y2 = y2 + y1
+FOR Y = 1 TO 10
+FOR X = 1 TO 10
+Z = POINT(X + XX, Y + YY) + 4
+IF Z > 255 THEN Z = 1
+PSET (X + XX, Y + YY), Z
+NEXT X
+NEXT Y
+LOOP
+
+SUB SETPAL (B1, G1, R1, B2, G2, R2, S, E)
+F = E - S
+B3 = (B2 - B1) / F
+G3 = (G2 - G1) / F
+R3 = (R2 - R1) / F
+B = B1
+G = G1
+R = R1
+FOR I = S TO E
+B = B + B3
+G = G + G3
+R = R + R3
+IF B > 63 THEN B = 63
+IF B < 0 THEN B = 0
+IF G > 63 THEN G = 63
+IF G < 0 THEN G = 0
+IF R > 63 THEN R = 63
+IF R < 0 THEN R = 0
+OUT &H3C8, I
+OUT &H3C9, INT(B)
+OUT &H3C9, INT(G)
+OUT &H3C9, INT(R)
+'PALETTE I, 65536 * INT(B) + 256 * INT(G) + INT(R)
+NEXT I
+END SUB
+
