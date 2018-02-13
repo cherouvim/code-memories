@@ -6,11 +6,11 @@
 body {
     max-width: 40em;
     min-width: 10em;
-    margin: 0 0 0 3em;
+    margin: 0 2%;
 }
 img {
-    width: 100%;
-    height: 100%;
+    width: 97%;
+    height: 97%;
     border: 4px solid #90909073;
     border-radius: 4px;
 }
